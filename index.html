@@ -1,77 +1,143 @@
+
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Catalano Framework by DiegoCatalano</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<head>
+		<meta charset="utf-8">
+		<title>Image processing framework - Catalano Framework</title>
+		<meta name="description" content="Use Java/Android to process image, create neural network and machine learning with the Catalano Framework">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="css/catalano.css" rel="stylesheet" media="all">
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/DiegoCatalano/catalanoframework.github.io">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/DiegoCatalano/catalanoframework.github.io/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/DiegoCatalano/catalanoframework.github.io/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+		<header>
+			<img src="../images/catalano.png">
+			<h1><a href="/">Catalano Framework</a></h1>
+			<a href="https://github.com/DiegoCatalano/Catalano-Framework">1.2 Version</a>
+		</header>
 
-    <div class="wrapper">
+<div id="content">
 
-      <section>
-        <div id="title">
-          <h1>Catalano Framework</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/DiegoCatalano">DiegoCatalano</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+			<section>
+				<nav>
+					<a href="#how-to-use" class="how">How to use</a>
+					<a href="#features" class="features">Features</a>
+					<a href="#upcoming" class="upcoming">Upcoming</a>
+          <a href="/documentation" class="upcoming">Deep inside</a>
+				</nav>
+			</section>
 
-        <h3>
-<a name="welcome-to-catalano-framework-page" class="anchor" href="#welcome-to-catalano-framework-page"><span class="octicon octicon-link"></span></a>Welcome to Catalano Framework page.</h3>
 
-<p>Current version: 1.1</p>
+			<!-- #home -->
 
-<p>The Catalano Framework is a framework for scientific computing for Java and Android. The project started as an initial port of the many features of the AForge.NET and Accord.NET frameworks for .NET, but is steadily growing with more advanced features which are now being shared between those projects.</p>
+				<section>
+					<h2>Catalano Framework, hãn?</h2>
+					<p>
+						The Catalano Framework is an image processing framework that join features from AForge.NET and Accord.NET in Java language. Using Catalano framework you'll be able to do incredible things in your pc, android or google glass. We are creating other badass features and would be awesome heard more about what you think!
+					</p>
+					<div class="example">
+            <h2>Example - Bradley Local Thresholding</h2>
+						<div class="example-left">
+							<h4>Original</h4>
+  					   <img src="images/bradleyA.png">
+						</div>
+						<div class="example-right">
+							<h4>Processed</h4>
+							<img src="images/bradleyB.png">
+						</div>
+					</div>
+				</section>
 
-<p>The project is organized under the same architecture found in the afore mentioned frameworks. Experienced users who would wish to leverage their expertise on Accord and AForge to work on Android can rely on the same namespaces for:  </p>
+				<section id="how-to-use">
+					<h2>How to use</h2>
+					<h3>Installing</h3>
+					<pre class="prettyprint">Load the libs in your project</pre>
+					<br>
+          <h3>Installing Android project</h3>
+          <pre class="prettyprint">If your are using developing with Android change the lib Catalano.Image to Catalano.Android.Image</pre>
+				</section>
 
-<pre><code> * Image Processing
- * Fuzzy Logic
- * Math
- * Statistics
- * Machine Learning
- * Neural Network
-</code></pre>
-
-<p>The project is also looking for enthusiasts and contributors to help in the project. If you have suggestions, enhancement requests or would like to report a bug, please refer to the Issue Tracker.</p>
-
-<p>The framework is released under the LGPL, which means it can be used even inside commercial applications. </p>
-      </section>
-
+				<section id="features">
+					<div class="example">
+            <h2>Features</h2>
+						<div class="example-left">
+							<h4>Libraries</h4>
+							<pre class="prettyprint">
+    Catalano.Image
+    Catalano.Fuzzy
+    Catalano.MachineLearning
+    Catalano.Math
+    Catalano.Neuro
+    Catalano.Statistics
+              </pre>
+						</div>
+						<div class="example-right">
+							<h4 >Benchmarking</h4>
+    <div class="bench">
+    Image 7374x7374 RGB...
+    Median filter - window size of 5
+    Aforge.net - 57430ms
+    Catalano Framework - 5488ms
+    <a class="difference" href="http://www.mathsisfun.com/percentage-difference.html">165% of difference</a>...not too bad ;)
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("Framework, Java, Android, Image Processing, Machine Learning, Math, Statistics, Libraries");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+						</div>
+					</div>
 
-  </body>
+				</section>
+				<section id="upcoming">
+					<div class="example">
+            <h2>Upcoming</h2>
+						<div class="example-left">
+							<h4>Future</h4>
+							<pre class="prettyprint">
+    Port to Google Glass®.
+    Port all current filters in multithreads.
+    Add lib for Biometrics.
+    Extend the whole framework.
+              </pre>
+						</div>
+						<div class="example-right">
+							<h4>Let's talk?</h4>
+							<pre>
+    e-email: <a class="email" href="mailto:diego.catalano@live.com">diego.catalano@live.com</a>
+            </pre>
+						</div>
+					</div>
+
+				</section>
+
+</div>
+
+		<footer>
+			<p>
+				Catalano Framework by <a href="">Diego Catalano</a>.
+				Released under the MIT license -  Copyright 2013
+			</p>
+      <p>Design - <a href="http://www.guilhermedecampo.com">Guilherme Decampo</a> </p>
+		</footer>
+
+		<a id="fork-me" href="https://github.com/DiegoCatalano/Catalano-Framework">
+			<img src="images/forkme.png" alt="Fork me on GitHub">
+		</a>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/prettify.js"></script>
+		<script src="js/catalano.js"></script>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'XXXXXXXXXXXX']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
 </html>
