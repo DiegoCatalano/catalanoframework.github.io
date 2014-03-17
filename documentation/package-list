@@ -1,9 +1,13 @@
-Catalano.Android.Imaging
 Catalano.Core
 Catalano.Fuzzy
 Catalano.Imaging
+Catalano.Imaging.Concurrent
+Catalano.Imaging.Concurrent.Filters
 Catalano.Imaging.Corners
+Catalano.Imaging.Corners.FREAK
 Catalano.Imaging.Filters
+Catalano.Imaging.Filters.Artistic
+Catalano.Imaging.Shapes
 Catalano.Imaging.Tools
 Catalano.MachineLearning
 Catalano.MachineLearning.VectorMachines
